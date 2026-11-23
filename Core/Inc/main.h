@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32g4xx_hal.h"
+#include "stm32h5xx_hal.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -57,32 +57,28 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define R_Pin GPIO_PIN_0
-#define R_GPIO_Port GPIOC
-#define G_Pin GPIO_PIN_1
-#define G_GPIO_Port GPIOC
-#define B_Pin GPIO_PIN_2
-#define B_GPIO_Port GPIOC
-#define DIS_RESET_Pin GPIO_PIN_5
-#define DIS_RESET_GPIO_Port GPIOA
-#define DIS_DC_Pin GPIO_PIN_6
-#define DIS_DC_GPIO_Port GPIOA
-#define DIS_CS_Pin GPIO_PIN_7
-#define DIS_CS_GPIO_Port GPIOA
-#define IMD_LED_CTRL_Pin GPIO_PIN_4
-#define IMD_LED_CTRL_GPIO_Port GPIOC
-#define AMS_LED_CTRL_Pin GPIO_PIN_5
-#define AMS_LED_CTRL_GPIO_Port GPIOC
-#define START_LED_CTRL_Pin GPIO_PIN_0
-#define START_LED_CTRL_GPIO_Port GPIOB
-#define TERM_EN_Pin GPIO_PIN_1
-#define TERM_EN_GPIO_Port GPIOB
-#define CAN_FLT_Pin GPIO_PIN_2
+#define START_BTN_SIG_Pin GPIO_PIN_1
+#define START_BTN_SIG_GPIO_Port GPIOA
+#define AUX_BTN_SIG_Pin GPIO_PIN_2
+#define AUX_BTN_SIG_GPIO_Port GPIOA
+#define DIS_RESET_Pin GPIO_PIN_0
+#define DIS_RESET_GPIO_Port GPIOB
+#define DIS_DC_Pin GPIO_PIN_1
+#define DIS_DC_GPIO_Port GPIOB
+#define DIS_CS_Pin GPIO_PIN_2
+#define DIS_CS_GPIO_Port GPIOB
+#define IMD_LED_CTRL_Pin GPIO_PIN_10
+#define IMD_LED_CTRL_GPIO_Port GPIOB
+#define LED_Pin GPIO_PIN_12
+#define LED_GPIO_Port GPIOB
+#define CAN_FLT_Pin GPIO_PIN_13
 #define CAN_FLT_GPIO_Port GPIOB
-#define START_BTN_SIG_Pin GPIO_PIN_12
-#define START_BTN_SIG_GPIO_Port GPIOB
-#define AUX_BTN_SIG_Pin GPIO_PIN_13
-#define AUX_BTN_SIG_GPIO_Port GPIOB
+#define TERM_EN_Pin GPIO_PIN_14
+#define TERM_EN_GPIO_Port GPIOB
+#define START_LED_CTRL_Pin GPIO_PIN_15
+#define START_LED_CTRL_GPIO_Port GPIOB
+#define AMS_LED_CTRL_Pin GPIO_PIN_9
+#define AMS_LED_CTRL_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 
